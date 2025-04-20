@@ -1,0 +1,26 @@
+{
+  "name": "newsletter-auto-publisher",
+  "version": "1.0.0",
+  "description": "A tool to automatically publish newsletter editions to LinkedIn by converting Markdown to LinkedIn-compatible formats.",
+  "license": "ISC",
+  "author": "Pradeep Gupta <pradeepngupta@gmail.com>",
+  "type": "module",
+  "main": "scripts/convertMarkdownToUnicode.js",
+  "scripts": {
+    "start": "node scripts/convertMarkdownToUnicode.js",
+    "test": "jest",
+    "build": "node build.js",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pradeepngupta/BeyondTheStack---Newsletter.git"
+  },
+  "keywords": [
+    "newsletter",
+    "LinkedIn",
+    "automation",
+    "markdown",
+    "publishing"
+  ]
+}
