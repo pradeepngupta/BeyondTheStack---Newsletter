@@ -21,7 +21,10 @@ for (let i = 0; i < 26; i++) {
 
 function toUnicode(text, style) {
   const map = style === 'bold' ? boldMap : italicMap;
-  return text.split('').map(c => map[c] || c).join('');
+  return text
+    .split('')
+    .map(c => (/[a-zA-Z]/.test(c) ? map[c] || c : c)) // Only transform alphabetic characters
+    .join('');
 }
 
 // Transform markdown

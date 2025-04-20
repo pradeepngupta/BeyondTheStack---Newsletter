@@ -1,26 +1,27 @@
 {
-  "name": "newsletter-auto-publisher",
+  "name": "linkedin-newsletter-automation",
   "version": "1.0.0",
-  "description": "A tool to automatically publish newsletter editions to LinkedIn by converting Markdown to LinkedIn-compatible formats.",
+  "description": "A tool to automate LinkedIn newsletter publishing by converting Markdown to LinkedIn-compatible Unicode.",
   "license": "ISC",
   "author": "Pradeep Gupta <pradeepngupta@gmail.com>",
   "type": "module",
-  "main": "scripts/convertMarkdownToUnicode.js",
   "scripts": {
-    "start": "node scripts/convertMarkdownToUnicode.js",
-    "test": "jest",
-    "build": "node build.js",
-    "lint": "eslint ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pradeepngupta/BeyondTheStack---Newsletter.git"
+    "convertMarkdown": "node scripts/convertMarkdownToUnicode.js",
+    "generateEmail": "node scripts/generateEmail.js",
+    "uploadImages": "node scripts/uploadImagesToCloudinary.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "linkedin",
     "newsletter",
-    "LinkedIn",
     "automation",
     "markdown",
-    "publishing"
-  ]
+    "unicode",
+    "newsletter"
+  ],
+  "dependencies": {
+    "cloudinary": "2.6.0",
+    "dotenv": "16.5.0",
+    "nodemailer": "6.10.1"
+  }
 }
