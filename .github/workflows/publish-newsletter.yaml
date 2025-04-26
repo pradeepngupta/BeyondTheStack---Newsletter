@@ -1,0 +1,66 @@
+name: Publish Newsletter to LinkedIn
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'newsletters/**.md'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v3   
+
+    - name: Check for edition.md in PR
+      id: check-edition
+      run: |
+        FILE=$(find . -type f -name "edition.md" | sort | tail -n 1)
+        if [ -z "$FILE" ]; then
+          echo "No edition.md found. Skipping publish."
+          echo "SKIP=true" >> $GITHUB_ENV
+        else
+          echo "EDITION_FILE=$FILE" >> $GITHUB_ENV
+          echo "SKIP=false" >> $GITHUB_ENV
+        fi
+
+    - name: Stop if no edition.md
+      if: env.SKIP == 'true'
+      run: exit 0
+
+    - name: Set Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Convert Markdown to Unicode
+      run: node scripts/convertMarkdownToUnicode.js "$EDITION_FILE" formatted_output.md
+
+    - name: Upload Images to Cloudinary
+      run: node scripts/uploadImagesToCloudinary.js formatted_output.md
+      env:
+        CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+        CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+        CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+
+    - name: Generate HTML Email
+      run: node scripts/generateEmailHtml.js formatted_output.md email_output.html
+
+    - name: Send email (only if not test mode)
+      if: env.IS_TEST_MODE != 'true'
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.gmail.com
+        server_port: 587
+        username: ${{ secrets.EMAIL_USERNAME }}
+        password: ${{ secrets.EMAIL_PASSWORD }}
+        subject: "📝 Newsletter Edition Ready"
+        html_body: $(cat email_output.html)
+        to: ${{ secrets.EMAIL_RECIPIENT }}
+        from: "Newsletter Bot <${{ secrets.EMAIL_USERNAME }}>"
