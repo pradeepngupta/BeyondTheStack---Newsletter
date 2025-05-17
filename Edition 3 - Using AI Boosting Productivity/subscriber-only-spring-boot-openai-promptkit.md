@@ -24,8 +24,6 @@ Developers today need more than just tools - they need smart companions to scale
 
 ---
 
-
-
 ## ✨ Copilot Optimised Prompts:
 
 ### 🔥 Debugging Spring Boot Apps (on Cloud)
@@ -268,5 +266,3 @@ Generate a developer onboarding guide section explaining how this critical compo
 ***Practical insights and real-world takeaways on Java, Spring Boot, Cloud Engineering, and AI for curious developers***
 
 Subscribe to continue receiving exclusive prompts, technical deep dives, and developer productivity tips from **Pradeep Gupta**.
-
-`<div style="page-break-after: always;"></div>`
