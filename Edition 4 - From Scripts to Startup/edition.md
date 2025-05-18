@@ -89,7 +89,7 @@ Because sometimes, the only way to validate a big idea... is to start  *small an
 
 ### 🔜 Next Edition Preview
 
-In the next edition of this newsletter, I’ll take you behind the scenes of one of the**most complex challenges**we faced while scaling our touchless billing platform:
+In the next edition of this newsletter, I’ll take you behind the scenes of one of the **most complex challenges** we faced while scaling our touchless billing platform:
 
 **“How we addressed security, device compatibility, and user experience across hundreds of devices.”**
 
