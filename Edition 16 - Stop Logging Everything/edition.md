@@ -1,4 +1,4 @@
-![1754814461459](image/edition/1754814461459.png)
+![1754817936722](image/edition/1754817936722.png)
 
 # 🛑Stop Logging Everything — Kafka Already Has the Truth
 
@@ -95,7 +95,7 @@ It’s not. Kafka already has the answer.
 
 Here’s what a **decoupled audit tracker** looks like:
 
-  ![1754769654124](image/edition/1754769654124.png)
+  ![1754817864584](image/edition/1754817864584.png)
 
 ## 🧰 What the Audit Tracker Does
 
