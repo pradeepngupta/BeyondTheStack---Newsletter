@@ -120,7 +120,7 @@ We (the Audit Team) introduced a simple but powerful pattern:
 
 ✅ Works across teams, languages, and deployments.
 
-✅ Scales with your Kafka cluster**.**
+✅ Scales with your Kafka cluster.
 
 ---
 
@@ -171,7 +171,7 @@ How producer & consumer interceptors work, and how to plug them into your pipeli
 
 * 📄 [Apache Kafka — Producer Interceptors](https://kafka.apache.org/documentation/#producerconfigs_interceptor.classes)
 * [📄Apache Kafka - Consumer Interceptor](https://kafka.apache.org/documentation/#consumerconfigs_interceptor.classes)
-* 📄 [**Audit Logs in Confluent Platform**]()
+* 📄 [**Audit Logs in Confluent Platform**](https://docs.confluent.io/platform/current/security/compliance/audit-logs/audit-logs-concepts.html)
 
 *Understand how Confluent captures key security and operational events directly in Kafka topics.*
 
@@ -202,7 +202,7 @@ How producer & consumer interceptors work, and how to plug them into your pipeli
 
 *How LinkedIn tracks and debugs Kafka message flows at massive scale.*
 
-* 📄 [**Kafka End-to-End Monitoring** (Spoud)]()
+* 📄 [**Kafka End-to-End Monitoring** (Spoud)](https://spoud-io.medium.com/kafka-end-to-end-monitoring-e69d286700f7)
 
 *Use synthetic producers/consumers to validate your Kafka health in real time.*
 
@@ -210,13 +210,13 @@ How producer & consumer interceptors work, and how to plug them into your pipeli
 
 ### 🔍 **Tracking & Monitoring at Scale**
 
-* 📄 [**Configure Kafka to Minimize Latency** (Confluent)]()
+* 📄 [**Configure Kafka to Minimize Latency** (Confluent)](https://www.confluent.io/blog/configure-kafka-to-minimize-latency/)
 
   *Producer and broker settings that affect end-to-end latency.*
-* 📄 [**The Kafka Monitoring Blog Post to End Most Posts** (Confluent)]()
+* 📄 [**The Kafka Monitoring Blog Post to End Most Posts** (Confluent)](https://www.confluent.io/blog/blog-post-on-monitoring-an-apache-kafka-deployment-to-end-most-blog-posts/)
 
   *Key metrics, alerting strategies, and Control Center dashboards.*
-* 📄 [**Comprehensive Guide to Kafka Monitoring** (RisingWave)]()
+* 📄 [**Comprehensive Guide to Kafka Monitoring** (RisingWave)](https://risingwave.com/blog/comprehensive-guide-to-kafka-monitoring/)
 
   *Best practices for throughput, lag, and error monitoring in production.*
 
@@ -241,13 +241,6 @@ How producer & consumer interceptors work, and how to plug them into your pipeli
 
 ---
 
-### 📈 **Operational Best Practices**
-
-* 📄 [Confluent — Monitoring Kafka Performance]()
-
-  *Key metrics & alerts to keep your Kafka audit service healthy.*
-
----
 
 ## 📅 Coming Up in Future Editions:
 
