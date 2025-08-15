@@ -241,7 +241,6 @@ How producer & consumer interceptors work, and how to plug them into your pipeli
 
 ---
 
-
 ## 📅 Coming Up in Future Editions:
 
 Here’s a peek into what’s brewing in the upcoming issues — each exploring a crucial facet of modern system design:
@@ -265,7 +264,7 @@ Here’s a peek into what’s brewing in the upcoming issues — each exploring 
 
 ## 🛠 Ready to Try It Yourself?
 
-I’ve put together a fully working example featuring  **Producer/Consumer Interceptors** , an  **Audit Topic** , and **Database Persistence** using an embedded Kafka provided by **spring-kafka-test** and the  **H2 database** . The project is tested with **JUnit 5** and structured as a multi-module Maven repository, which can also be converted into separate deployable microservices.
+I’ve put together a fully working example featuring  **Producer/Consumer Interceptors** , an  **Audit Topic** , and **Database Persistence** using an embedded Kafka provided by **spring-kafka-test** and the  **H2 database.** The project is tested with **JUnit 5** and structured as a multi-module Maven repository, which can also be converted into separate deployable microservices.
 
 👉 **GitHub:** [kafka-msg-audit](https://github.com/pradeepngupta/kafka-msg-audit)
 
