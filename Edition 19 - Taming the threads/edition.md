@@ -74,7 +74,6 @@ This is not just a Java upgrade — it’s a ***concurrency mindset shift*** for
 
 From Netflix’s real-world adoption ([Java 21 Virtual Threads – Dude, Where’s My Lock?](https://netflixtechblog.com/java-21-virtual-threads-dude-wheres-my-lock-3052540e231d)) to community discussions, one lesson is clear: **scalability is not just about more threads — it’s about smarter synchronization.**
 
-
 ---
 
 ## The Old World vs The New World
@@ -230,8 +229,6 @@ This is concurrency at  *human scale* .
 
 ---
 
-
-
 ## 📚 References for Further Reading
 
 Want to dive deeper? These are great starting points:
@@ -273,11 +270,7 @@ As engineers, our challenge is to harness this power responsibly:
 
 > 👉 **Scaling smarter means thinking beyond locks—design richly concurrent, resilient systems.**
 
-
-
 ---
-
-
 
 # 🔔 **Subscribe & Stay Ahead!**
 
