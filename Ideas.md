@@ -20,3 +20,10 @@ https://medium.com/javarevisited/review-is-designing-data-intensive-applications
 Java Equals & Hashcode
 
 SOLID Principle SEries
+
+
+Why Kafka Consumer Rebalances Can Ruin Your System — And How I Engineered Resilience Against It
+
+The WALL-Eification of Software Development — How AI is Quietly Shifting Ownership and Accountability
+
+Why Are Tech Giants Abandoning Kubernetes?
