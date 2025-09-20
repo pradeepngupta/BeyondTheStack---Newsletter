@@ -21,9 +21,26 @@ Java Equals & Hashcode
 
 SOLID Principle SEries
 
-
 Why Kafka Consumer Rebalances Can Ruin Your System — And How I Engineered Resilience Against It
 
 The WALL-Eification of Software Development — How AI is Quietly Shifting Ownership and Accountability
 
 Why Are Tech Giants Abandoning Kubernetes?
+
+
+https://linear.app/now/how-we-built-multi-region-support-for-linear?utm_source=substack&utm_medium=email
+
+
+java streams
+
+
+java collection and data structures basic
+
+
+generics and Autoboxing
+
+
+sealed classes
+
+
+lazy and eager initialization
