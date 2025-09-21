@@ -6,11 +6,9 @@ What if I told you that  **100% unit test coverage could still cost you millions
 
 Coverage isn’t protection—it’s a false sense of security. In today’s complex systems, lenient validations hide in plain sight, waiting to break production when you least expect it.
 
-
 We had 100% test coverage (BDD). Everything was green. Confidence was sky high.
 
 And then, on go-live day, production broke. That’s when I learned the hard way:  **coverage ≠ correctness** .
-
 
 Welcome to **Beyond the Stack** — the place where we strip away frameworks and dive deep into the real, hard-hitting challenges shaping tomorrow’s tech.
 
@@ -80,7 +78,6 @@ double persistedQty = {qty retrieved from db};
 boolean result = persistedQty.contains(n);
 ```
 
-
 Here, the `contains` method caused the test to pass incorrectly:
 
 * `500` **contains** `50` → test passes.
@@ -103,6 +100,27 @@ Here, the `contains` method caused the test to pass incorrectly:
 ![1758384911098](image/edition/1758384911098.png)
 
 ---
+
+## 🛡️ The STRICT Framework for Testing
+
+To make sure your validation is never lenient, I follow what I call the **STRICT Framework** — six principles that keep tests honest:
+
+* **S — Specific** → Assertions must check  *exact values* , not approximations. *Example: `== 50` not `contains(50)`*
+* **T — Thorough** → Cover  *edge cases, negative paths, and boundaries* , not just the happy path.
+* **R — Reviewed** → Use *peer reviews and static code analysis* to catch blind spots humans miss.
+* **I — Isolated** → Each test should validate  *one thing clearly* , avoiding overlap and confusion.
+* **C — Consistent** → Enforce *the same level of strictness* across modules, teams, and releases.
+* **T — Traceable** → Every test must map back to a  *clear business rule or acceptance criteria* .
+
+> 👉 Follow **STRICT**, and your tests stop being cheerleaders. They become *gatekeepers* .
+
+Which of these six principles does your team struggle with the most? **Drop a comment below** — I’d love to hear real-world stories.
+
+![1758472786961](image/edition/1758472786961.png)
+
+---
+
+
 
 ## ⚡ The Mindset Shift: Strict > Lenient
 
