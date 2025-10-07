@@ -1,4 +1,4 @@
-# e![1759858271718](image/edition/1759858271718.png)
+![1759858271718](image/edition/1759858271718.png)
 
 # 🧩 The SYSTEM Behind Every Great System
 
