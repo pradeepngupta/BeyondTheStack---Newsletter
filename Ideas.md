@@ -27,20 +27,17 @@ The WALL-Eification of Software Development — How AI is Quietly Shifting Owner
 
 Why Are Tech Giants Abandoning Kubernetes?
 
-
 https://linear.app/now/how-we-built-multi-region-support-for-linear?utm_source=substack&utm_medium=email
-
 
 java streams
 
-
 java collection and data structures basic
-
 
 generics and Autoboxing
 
-
 sealed classes
 
-
 lazy and eager initialization
+
+
+API Performance, metrics and measurements
