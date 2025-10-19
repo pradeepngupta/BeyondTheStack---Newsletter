@@ -1,6 +1,6 @@
 ![1759858271718](image/edition/1759858271718.png)
 
-# 🧩 The SYSTEM Behind Every Great System
+# 🧩 Design Smarter: The SYSTEM Framework Every Architect Should Know
 
 Everyone talks about  *the system* . Few realize that designing one requires following another.
 
